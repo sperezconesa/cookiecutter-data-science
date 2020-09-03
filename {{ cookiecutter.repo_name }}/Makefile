@@ -9,5 +9,3 @@ make_conda:
 update_conda:
 	conda env update --file environment.yml
 
-remove_conda:
-	conda remove --name $(PROJECT_NAME) --all
