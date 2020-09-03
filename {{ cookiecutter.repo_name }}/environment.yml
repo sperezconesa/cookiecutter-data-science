@@ -15,6 +15,7 @@ dependencies:
   - scipy
   - seaborn
   - tqdm
+  - ipykernel
   - pip:
     - datreant
     - gmxapi==0.2.0a1
