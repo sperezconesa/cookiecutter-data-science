@@ -16,7 +16,7 @@ remove_conda:
 	conda remove --name=$(PROJECT_NAME)
 
 update_data:
-	 while read a b;do rsync -rauLih --delete --include-from=data/raw/include_list.txt   data/raw/$$a data/raw/$$b;done < data/raw/dir_list.txt
+	 while read a b;do rsync -rauLih --progress --delete --include-from=data/raw/include_list.txt   data/raw/$$a data/raw/$$b;done < data/raw/dir_list.txt
 	 python  src/data/get_external_data.py
 
 update_data_dry:
